@@ -45,8 +45,8 @@ let status;
 status = (status = ($.getval("qlpstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 const qlphdArr = [],kzyhdArr = [],qlpcount = ''
 let times = Math.round(Date.now() / 1000)
-let qlphd = $.getdata('qlphd')
-let kzyhd = $.getdata('kzyhd')
+let qlphd = $.getdata('{"Accept-Encoding":"br, gzip, deflate","Accept":"*/*","Connection":"keep-alive","Content-Type":"application/json","Host":"ibestfanli.com","User-Agent":"oneline/1.9.9 (iPhone; iOS 12.1.2; Scale/2.00)","Authorization":"{\"prdId\":\"710103\",\"version\":\"1.3.25.5\",\"sysVersion\":\"12.1.2\",\"timestamp\":\"1620057339\",\"currentChannel\":61,\"sdk_version\":\"1.3.25.5\",\"sta_device_id\":\"609a7434c19f4590b8113a056f3db9b6\",\"deviceId\":\"609a7434c19f4590b8113a056f3db9b6\",\"userId\":\"1389247291479891970\",\"platform\":\"ios\",\"signature\":\"02a97590855276545200aa5776c35a6e\",\"activityChannel\":\"61\",\"versionCode\":89,\"appVersionCode\":199,\"phoneType\":\"iPhone11,8\",\"signatureI\":\"QJU6XGTkf2VrAkOYFDHdFePp0srUlPW9FnTqM+raty0lbA1wSg9DG29TKS7jgwmc\"}","Accept-Language":"zh-Hans-CN;q=1","Content-Length":"130"}')
+let kzyhd = $.getdata('{"Accept-Encoding":"br, gzip, deflate","Accept":"*/*","Connection":"keep-alive","Content-Type":"application/json","Host":"ibestfanli.com","User-Agent":"zhuangyuan/1.9.9 (iPhone; iOS 12.1.2; Scale/2.00)","Authorization":"{\"prdId\":\"710302\",\"version\":\"1.3.25.5\",\"sysVersion\":\"12.1.2\",\"timestamp\":\"1620057785\",\"currentChannel\":61,\"sdk_version\":\"1.3.25.5\",\"sta_device_id\":\"4ad54fa85a834ce6819018629b345e1b\",\"deviceId\":\"4ad54fa85a834ce6819018629b345e1b\",\"userId\":\"1389249161129283585\",\"platform\":\"ios\",\"signature\":\"d765b86b9ba88e9317e8fa4824614d95\",\"activityChannel\":\"61\",\"versionCode\":89,\"appVersionCode\":199,\"phoneType\":\"iPhone11,8\",\"signatureI\":\"QJU6XGTkf2VrAkOYFDHdFePp0srUlPW9FnTqM+raty0lbA1wSg9DG29TKS7jgwmc\"}","Accept-Language":"zh-Hans-CN;q=1","Content-Length":"129"}')
 let tx = 0  //数字改为1运行脚本可自动提现。建议手动运行。需要提现的时候再改
 !(async () => {
   if (typeof $request !== "undefined") {
