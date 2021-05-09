@@ -22,7 +22,7 @@ jobs:
                   npm install
             - name: "运行 【猜歌联萌378】"
               run: |
-                  node /qiandao/cglm378.js
+                  node /cglm378.js
               env:
                   
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
